@@ -1,0 +1,38 @@
+---
+description: Code-Qualität, Fehlerbehandlung und Async
+globs: "**/*.ts,**/*.tsx,**/*.js,**/*.jsx,**/*.astro"
+alwaysApply: false
+---
+
+# Code-Qualität
+
+## Async/Await — bevorzugt
+
+```javascript
+// ✅ RICHTIG
+const result = await someAsyncOperation();
+
+// ❌ FALSCH — .then() nur, wenn begründet
+someAsyncOperation().then(result => { ... });
+```
+
+## Fehlerbehandlung — immer explizit
+
+```javascript
+// ✅ RICHTIG — keine stillen Fehler
+try {
+  const data = await fetchData();
+  return data;
+} catch (err) {
+  console.error('fetchData failed', err);
+  throw err;
+}
+
+// ❌ FALSCH — kein leeres catch
+try { ... } catch (e) {}
+```
+
+## Kommentare
+
+- Kommentare im Code auf **Englisch**.
+- Komplexe Logik kurz begründen.

@@ -1,0 +1,30 @@
+---
+description: Projekt-Kontext und technischer Stack (Astro, keine Secrets)
+alwaysApply: true
+---
+
+# TC Astro Site — Projekt-Kontext
+
+Du arbeitest an einer **Website mit Astro.js**. Technische Entscheidungen sollen zu diesem Stack passen und Wartbarkeit sowie einfaches Build/Deploy sicherstellen.
+
+## Technischer Stack
+
+- **Framework:** Astro (aktuell v6)
+- **Modul-System:** ES Modules (`"type": "module"`)
+- **Node:** siehe `engines` in package.json (>=22.12.0)
+
+## Pflicht-Regeln
+
+- **Keine hardcoded API-Keys oder Secrets** — für Client-seitige oder Build-Zeit-Konfiguration Environment Variables nutzen (z. B. `import.meta.env` in Astro).
+- **`.env.example`** im Repo führen und bei neuen Env-Variablen ergänzen (nur Variablennamen + kurze Beschreibung, keine echten Werte).
+
+## Env in Astro
+
+```javascript
+// ✅ RICHTIG — öffentliche Env (PUBLIC_*) oder Server
+const apiUrl = import.meta.env.PUBLIC_API_URL;
+if (!apiUrl) throw new Error('PUBLIC_API_URL is not set');
+
+// ❌ FALSCH — niemals hardcoded
+const apiUrl = 'https://api.example.com';
+```

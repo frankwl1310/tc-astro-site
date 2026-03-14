@@ -1,21 +1,23 @@
-# Astro Starter Kit: Minimal
+# TC Astro Site
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Website-Projekt auf Basis von **Astro.js** (Minimal-Template).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Cursor Rules
+
+Projekt-spezifische Regeln liegen unter `.cursor/rules/` (Kontext, Code-Qualität, Astro-Patterns, Frontend-Conventions, Commits). Env-Variablen über `.env`; Vorlage: `.env.example`.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
 /
+├── .cursor/rules/   # Cursor-Regeln
 ├── public/
 ├── src/
+│   ├── components/
+│   ├── layouts/
 │   └── pages/
 │       └── index.astro
+├── .env.example
 └── package.json
 ```
 

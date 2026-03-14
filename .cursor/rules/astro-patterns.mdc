@@ -1,0 +1,27 @@
+---
+description: Astro-spezifische Patterns (Components, Pages, Assets)
+globs: "**/*.astro"
+alwaysApply: false
+---
+
+# Astro-Patterns
+
+## Komponenten
+
+- Wiederverwendbare UI in `src/components/`, Seiten in `src/pages/`.
+- Gemeinsame Layouts in `src/layouts/` und per `<Layout>` einbinden.
+
+## Pages & Routing
+
+- File-based Routing: `src/pages/index.astro` → `/`, `about.astro` → `/about`.
+- Dynamische Routen: `[id].astro` oder `[...slug].astro` nutzen.
+
+## Assets
+
+- Statische Dateien (Bilder, Fonts) in `public/` — werden unverändert unter `/` ausgeliefert.
+- Für optimierte Bilder: Astro's `<Image>` aus `astro:assets` nutzen.
+
+## Best Practices
+
+- Kein unnötiges Client-JavaScript: `client:*` Direktiven nur verwenden, wenn Interaktivität nötig ist.
+- Semantisches HTML und zugängliche Struktur (Überschriften, Landmarks, alt-Texte).

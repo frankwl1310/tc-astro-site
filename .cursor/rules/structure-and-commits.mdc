@@ -1,0 +1,28 @@
+---
+description: Projektstruktur und Commit-Konvention
+alwaysApply: true
+---
+
+# Struktur & Commits
+
+## Astro-Projektstruktur (empfohlen)
+
+```
+src/
+  components/   → Wiederverwendbare Astro/UI-Komponenten
+  layouts/      → Layout-Komponenten (BaseLayout, etc.)
+  pages/        → File-based Routing (index.astro, about.astro)
+  styles/       → Globale oder geteilte CSS
+public/         → Statische Assets (Bilder, Fonts, favicon)
+.env.example    → Immer aktuell halten (ohne echte Secrets)
+```
+
+## Commit-Messages (Konvention)
+
+```
+feat: Add contact form component
+fix: Correct meta viewport for mobile
+style: Adjust hero spacing
+chore: Bump Astro to 6.x
+docs: Update README deployment section
+```

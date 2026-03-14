@@ -1,0 +1,24 @@
+---
+description: Frontend-Conventions (Typo, Farben, Accessibility)
+globs: "**/*.astro,**/*.css,**/*.tsx"
+alwaysApply: false
+---
+
+# Frontend-Conventions
+
+## Typography & Design
+
+- Aussagekräftige Schriftwahl; generische System-Fonts nur bewusst einsetzen.
+- Farben und Abstände konsistent halten (z. B. CSS-Variablen für Theme).
+
+## Accessibility
+
+- Semantisches HTML (header, main, nav, section, article).
+- Sinnvolle Überschriften-Hierarchie (h1 → h2 → …).
+- Bilder mit aussagekräftigem `alt`-Text; dekorative mit `alt=""`.
+- Kontraste und fokussierbare interaktive Elemente prüfen.
+
+## Performance
+
+- Bilder optimieren (Astro `<Image>` wo sinnvoll).
+- Kein unnötiges Client-JS; `client:*` nur bei Bedarf.
