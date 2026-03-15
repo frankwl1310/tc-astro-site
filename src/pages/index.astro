@@ -1,17 +1,138 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+<BaseLayout>
+  <!-- Typ A – Weiß: Hero -->
+  <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">
+    <div class="max-w-content mx-auto">
+      <h1 class="max-w-3xl mb-6">
+        HubSpot wird eingeführt, um Arbeit zu vereinfachen.
+        <span class="text-taipan-blue-600"> In vielen Unternehmen passiert das Gegenteil.</span>
+      </h1>
+      <p class="text-body max-w-prose mb-5">
+        Budgets sind investiert, die Erwartung ist klar: mehr Struktur, bessere Transparenz, weniger manuelle Arbeit. In der Praxis bleibt der operative Aufwand trotzdem hoch.
+      </p>
+      <p class="text-body max-w-prose mb-10">
+        Das liegt selten an HubSpot selbst. Es liegt daran, dass bestehende Arbeitsweisen unverändert in ein neues System übertragen werden.
+      </p>
+      <div class="pull-quote max-w-prose">
+        <p>HubSpot macht diese Strukturen sichtbar – und verstärkt sie.</p>
+      </div>
+    </div>
+  </section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <!-- Typ B – Dunkel: Kernthese -->
+  <section id="diagnose" class="section-b section-padding py-16 md:py-20">
+    <div class="max-w-content mx-auto">
+      <span class="label-overline mb-6 block !text-taipan-blue-400">Kernthese</span>
+      <h2 class="max-w-3xl mb-6">
+        HubSpot scheitert selten an Funktionen. Es scheitert an der Annahme, dass bestehende Arbeitsweisen zukunftsfähig sind.
+      </h2>
+      <p class="max-w-prose mb-5 text-[18px] leading-[1.75]">
+        In vielen Projekten wird die bestehende Arbeitslogik dokumentiert, technisch abgebildet und automatisiert. Die zugrunde liegende Frage bleibt ungestellt: Welche Arbeit muss überhaupt noch von Menschen erledigt werden?
+      </p>
+      <p class="max-w-prose">
+        Damit wird HubSpot genutzt, um bestehende Arbeit effizienter zu organisieren – nicht, um Arbeit neu zu verteilen oder überflüssig zu machen. Genau hier entsteht die Diskrepanz zwischen Investition und Wirkung.
+      </p>
+    </div>
+  </section>
+
+  <!-- Typ C – Hell: Entlastung -->
+  <section id="entlastung" class="section-c section-padding py-16 md:py-20">
+    <div class="max-w-content mx-auto">
+      <h2 class="max-w-3xl mb-6">
+        Operative Entlastung ist der Maßstab.
+        <span class="text-taipan-gray-700"> Nicht Funktionsumfang, nicht Best Practices.</span>
+      </h2>
+      <p class="text-body max-w-prose mb-12">
+        Ob ein HubSpot-Setup wirkt, zeigt sich an einer Frage: Reduziert es spürbar operative Arbeit – oder nicht?
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div>
+          <h3 class="mb-2">Datenpflege</h3>
+          <p class="text-body text-[16px]">Wird zur Ausnahme. Informationen entstehen im Arbeiten, nicht durch manuelle Nachpflege.</p>
+        </div>
+        <div>
+          <h3 class="mb-2">Status</h3>
+          <p class="text-body text-[16px]">Ist jederzeit sichtbar. Fortschritt muss nicht erfragt oder in Meetings rekonstruiert werden.</p>
+        </div>
+        <div>
+          <h3 class="mb-2">Reporting</h3>
+          <p class="text-body text-[16px]">Entsteht laufend. Zahlen sind aktuell verfügbar, nicht mühsam aufbereitet.</p>
+        </div>
+      </div>
+      <p class="text-body max-w-prose mb-8">
+        KI-Agenten und Assistenten verstärken diesen Effekt: Sie übernehmen repetitive, regelbasierte Aufgaben – Datenanreicherung, Status-Updates, Informationsaggregation – und schaffen Freiraum für Gespräche, Einordnung und Beziehungsarbeit.
+      </p>
+      <div class="pull-quote max-w-prose">
+        <p>Entlastung ist kein Nebeneffekt von Automatisierung, sondern ihr Ausgangspunkt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typ A – Weiß: Ansatz -->
+  <section id="ansatz" class="section-a section-padding py-16 md:py-20">
+    <div class="max-w-content mx-auto">
+      <h2 class="max-w-3xl mb-6">
+        HubSpot ist kein Projekt.
+        <span class="text-taipan-blue-600"> Richtig verstanden ist es eine Arbeitsplattform.</span>
+      </h2>
+      <p class="text-body max-w-prose mb-5">
+        Wird HubSpot genutzt, um bestehende Arbeitsweisen abzubilden, bleibt es ein System unter vielen. Wird es genutzt, um Arbeit neu zu verteilen und operative Last systematisch zu reduzieren, wird es zur Plattform, die Teams im Alltag tatsächlich unterstützt.
+      </p>
+      <p class="text-body max-w-prose">
+        Der Unterschied liegt nicht im Tool. Er liegt in der Frage, ob Arbeit vor der Systemgestaltung neu gedacht wird – oder danach.
+      </p>
+    </div>
+  </section>
+
+  <!-- Typ B – Dunkel: Für wen -->
+  <section id="fuer-wen" class="section-b section-padding py-16 md:py-20">
+    <div class="max-w-content mx-auto">
+      <h2 class="max-w-3xl mb-12">
+        Für wen dieser Ansatz passt
+        <span class="text-taipan-blue-400">(und für wen nicht).</span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <span class="label-overline mb-6 block !text-taipan-blue-400">Passt für Organisationen, die</span>
+          <ul class="space-y-4 text-[18px] leading-[1.75] text-taipan-blue-100">
+            <li class="flex items-start gap-3"><span class="text-taipan-blue-400 mt-0.5 shrink-0">—</span> operative Entlastung bewusst priorisieren</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-blue-400 mt-0.5 shrink-0">—</span> bestehende Arbeitsweisen hinterfragen wollen</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-blue-400 mt-0.5 shrink-0">—</span> Akzeptanz im Team ermöglichen, nicht erzwingen möchten</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-blue-400 mt-0.5 shrink-0">—</span> bereit sind, Systemen Verantwortung zu übergeben</li>
+          </ul>
+        </div>
+        <div>
+          <span class="label-overline mb-6 block !text-taipan-gray-500">Passt nicht, wenn</span>
+          <ul class="space-y-4 text-[18px] leading-[1.75] text-taipan-blue-400">
+            <li class="flex items-start gap-3"><span class="text-taipan-gray-700 mt-0.5 shrink-0">—</span> HubSpot „schnell eingeführt“ werden soll</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-gray-700 mt-0.5 shrink-0">—</span> bestehende Prozesse 1:1 digital abgebildet werden sollen</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-gray-700 mt-0.5 shrink-0">—</span> Automatisierung Kontrolle statt Entlastung schaffen soll</li>
+            <li class="flex items-start gap-3"><span class="text-taipan-gray-700 mt-0.5 shrink-0">—</span> ein Tool erwartet wird, das Probleme löst, ohne Arbeit neu zu denken</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typ A – Weiß: CTA -->
+  <section id="kontakt" class="section-a section-padding py-16 md:py-20">
+    <div class="max-w-content mx-auto">
+      <span class="label-overline mb-6 block">Nächster Schritt</span>
+      <h2 class="max-w-3xl mb-6">
+        Kein Verkaufsgespräch.
+        <span class="text-taipan-blue-600"> Ein Sparring. Eine Standortbestimmung.</span>
+      </h2>
+      <p class="text-body max-w-prose mb-10">
+        Mit dem Ziel zu klären, ob und wie HubSpot in deinem Kontext tatsächlich entlasten kann.
+      </p>
+      <a
+        href="mailto:fwl@taipanconsulting.de"
+        class="h-12 px-8 inline-flex items-center bg-taipan-orange text-white rounded-md text-[16px] font-semibold hover:bg-taipan-orange-hover transition-colors duration-200"
+      >
+        Gespräch vereinbaren
+      </a>
+    </div>
+  </section>
+</BaseLayout>

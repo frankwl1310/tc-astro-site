@@ -1,0 +1,26 @@
+---
+description: Taipan-Styleguide beim Bauen von Seiten anwenden
+globs: "**/*.astro,**/*.css"
+alwaysApply: false
+---
+
+# Taipan-Styleguide beim Bauen von Seiten
+
+Beim Erstellen oder Überarbeiten von Seiten und Komponenten **immer** die Taipan-Vorgaben beachten.
+
+## Referenzdokumente
+
+- **Designsystem:** `docs/STYLEGUIDE.md` (Farben, Typo, Komponenten, Sektions-Typen, Spacing, Regeln)
+- **Anleitung:** `docs/SEITEN-BAUEN.md` (Schritte, Sektions-Wechsel, Typografie, CTAs, Checkliste)
+
+Quelle: [Taipan-Styleguide v2](https://www.taipanconsulting.de/hubfs/0_temp/Taipan-Styleguide-v2.html) (Februar 2026).
+
+## Kurzregeln
+
+1. **Farben:** Blau (900/800/600/400/100/50) für Marke und UI, Anthrazit/Grau für Text, **Orange nur für einen primären CTA** pro Viewport.
+2. **Typografie:** Nur **Inter**; H1/H2/H3 und Body wie im Styleguide (Größen, Gewichte, Farben); Fließtext max. 680px breit.
+3. **Sektionen:** Drei Typen (A Weiß, B Dunkel, C Hell) **im Wechsel**; nie zwei gleiche Typen hintereinander.
+4. **Spacing:** Sektions-Padding 64–80px, Abstand zwischen Sektionen 80–100px, Content-Container 1120px.
+5. **Pull Quotes:** Maximal eine pro Sektion; Stil wie in STYLEGUIDE.md (Linie links, 22px, Light Italic).
+
+Vor dem Abschluss: Checkliste in `docs/SEITEN-BAUEN.md` (Abschnitt 7) durchgehen.
