@@ -1,0 +1,15 @@
+# Taipan Consulting – Frank Welsch-Lehmann
+
+## Wer wir sind
+Taipan Consulting GmbH ist ein HubSpot Platinum Solutions Partner in Frankfurt.
+Gründer und Geschäftsführer: Frank Welsch-Lehmann.
+Schwerpunkt: HubSpot-Implementierungen für B2B-Midmarket mit Fokus auf operative Entlastung.
+
+## Kernthese
+HubSpot scheitert selten an Funktionen — fast immer an der zugrunde liegenden Arbeitslogik.
+
+## Wichtige Seiten
+- /warum-hubspot-projekte-scheitern — Analyse typischer Denkfehler bei HubSpot-Projekten
+- /arbeitsweise — Beratungsansatz: Businesslogik vor Systemkonfiguration
+- /operative-entlastung-in-der-praxis — Praxisbeispiele
+- /ueber-taipan-consulting — Über Frank Welsch-Lehmann und Taipan Consulting

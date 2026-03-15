@@ -1,7 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Taipan Consulting GmbH",
+  "description": "HubSpot Platinum Solutions Partner mit Fokus auf operative Entlastung im B2B-Midmarket",
+  "founder": {
+    "@type": "Person",
+    "name": "Frank Welsch-Lehmann",
+    "jobTitle": "Geschäftsführer",
+    "knowsAbout": ["HubSpot", "CRM-Implementierung", "Marketing-Automatisierung", "B2B-Vertrieb"],
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Neue Mainzer Str. 66",
+    "addressLocality": "Frankfurt",
+    "postalCode": "60311",
+    "addressCountry": "DE",
+  },
+  "url": "https://taipanconsulting.de",
+  "telephone": "+496994322134",
+  "areaServed": "DE",
+};
 ---
 <BaseLayout>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  </Fragment>
   <!-- Typ A – Weiß: Hero -->
   <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">
     <div class="max-w-content mx-auto">

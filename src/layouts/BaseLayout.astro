@@ -18,6 +18,7 @@ const { title = "Taipan Consulting – HubSpot, das im Alltag wirklich entlastet
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <slot name="head" />
   </head>
   <body class="min-h-screen bg-white">
     <Navbar />
