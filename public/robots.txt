@@ -25,4 +25,4 @@ Disallow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://taipanconsulting.de/sitemap-index.xml
+Sitemap: https://taipanconsulting.com/sitemap-index.xml
