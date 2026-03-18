@@ -9,14 +9,22 @@ interface Props {
   ogTitle?: string;
   ogDescription?: string;
   ogUrl?: string;
+  ogImage?: string;
 }
+
+const canonicalUrl = Astro.site
+  ? String(new URL(Astro.url.pathname, Astro.site))
+  : Astro.url.href;
 
 const {
   title = "Taipan Consulting – HubSpot, das im Alltag wirklich entlastet",
   description = "HubSpot wird eingeführt, um Arbeit zu vereinfachen. In vielen Unternehmen passiert das Gegenteil.",
   ogTitle = title,
   ogDescription = description,
-  ogUrl = Astro.site ? String(new URL(Astro.url.pathname, Astro.site)) : Astro.url.href,
+  ogUrl = canonicalUrl,
+  ogImage = Astro.site
+    ? String(new URL("/og-image.png", Astro.site))
+    : "/og-image.png",
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -27,6 +35,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalUrl} />
     <title>{title}</title>
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -35,10 +44,12 @@ const {
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={ogUrl} />
     <meta property="og:locale" content="de_DE" />
+    <meta property="og:image" content={ogImage} />
     <!-- Twitter/X Card (funktioniert auch für WhatsApp, LinkedIn) -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
     <slot name="head" />
   </head>
   <body class="min-h-screen bg-white">
@@ -53,7 +64,7 @@ const {
       id="hs-script-loader"
       async
       defer
-      src="//js.hs-scripts.com/1661537.js"
+      src="https://js.hs-scripts.com/1661537.js"
     ></script>
     <!-- End of HubSpot Embed Code -->
   </body>

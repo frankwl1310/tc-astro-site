@@ -23,10 +23,21 @@ const organizationSchema = {
   "telephone": "+496994322134",
   "areaServed": "DE",
 };
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Taipan Consulting",
+  "url": "https://taipanconsulting.de/",
+  "description": "HubSpot wird eingeführt, um Arbeit zu vereinfachen. In vielen Unternehmen passiert das Gegenteil.",
+  "publisher": { "@type": "Organization", "name": "Taipan Consulting GmbH" },
+  "inLanguage": "de-DE",
+};
 ---
 <BaseLayout>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
   </Fragment>
   <!-- Typ A – Weiß: Hero -->
   <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">

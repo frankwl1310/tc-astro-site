@@ -1,5 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://taipanconsulting.de/" },
+    { "@type": "ListItem", "position": 2, "name": "Warum HubSpot-Projekte scheitern", "item": "https://taipanconsulting.de/warum-hubspot-projekte-scheitern/" },
+  ],
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Warum HubSpot-Projekte scheitern – Taipan Consulting",
+  "description": "HubSpot scheitert selten an Funktionen. Fast immer an der zugrunde liegenden Arbeitslogik. Eine Analyse der typischen Denkfehler.",
+  "url": "https://taipanconsulting.de/warum-hubspot-projekte-scheitern/",
+  "isPartOf": { "@type": "WebSite", "name": "Taipan Consulting", "url": "https://taipanconsulting.de/" },
+  "provider": { "@type": "ProfessionalService", "name": "Taipan Consulting GmbH", "url": "https://taipanconsulting.de" },
+};
 ---
 <BaseLayout
   title="Warum HubSpot-Projekte scheitern – Taipan Consulting"
@@ -7,6 +26,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   ogTitle="Warum HubSpot-Projekte scheitern"
   ogDescription="HubSpot scheitert selten an Funktionen. Fast immer an der zugrunde liegenden Arbeitslogik."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  </Fragment>
   <!-- Typ A – Weiß: Hero -->
   <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">
     <div class="max-w-content mx-auto">

@@ -1,10 +1,39 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://taipanconsulting.de/" },
+    { "@type": "ListItem", "position": 2, "name": "Gespräch", "item": "https://taipanconsulting.de/gespraech/" },
+  ],
+};
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Gespräch – Taipan Consulting",
+  "description": "Kein Verkaufsgespräch. Ein Sparring, eine Standortbestimmung – mit dem Ziel zu klären, ob und wie HubSpot in deinem Kontext entlasten kann.",
+  "url": "https://taipanconsulting.de/gespraech/",
+  "isPartOf": { "@type": "WebSite", "name": "Taipan Consulting", "url": "https://taipanconsulting.de/" },
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Taipan Consulting GmbH",
+    "url": "https://taipanconsulting.de",
+    "telephone": "+496994322134",
+    "email": "fwl@taipanconsulting.de",
+  },
+};
 ---
 <BaseLayout
   title="Gespräch – Taipan Consulting"
   description="Kein Verkaufsgespräch. Ein Sparring, eine Standortbestimmung – mit dem Ziel zu klären, ob und wie HubSpot in deinem Kontext entlasten kann."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
+  </Fragment>
   <!-- Typ A – Weiß: Hero -->
   <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">
     <div class="max-w-content mx-auto">
