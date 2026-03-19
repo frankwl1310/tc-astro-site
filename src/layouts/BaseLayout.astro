@@ -10,6 +10,8 @@ interface Props {
   ogDescription?: string;
   ogUrl?: string;
   ogImage?: string;
+  /** Open Graph type; use `article` for editorial / guide pages. */
+  ogType?: string;
 }
 
 const canonicalUrl = Astro.site
@@ -25,6 +27,7 @@ const {
   ogImage = Astro.site
     ? String(new URL("/og-image.png", Astro.site))
     : "/og-image.png",
+  ogType = "website",
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -38,7 +41,7 @@ const {
     <link rel="canonical" href={canonicalUrl} />
     <title>{title}</title>
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="Taipan Consulting" />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />

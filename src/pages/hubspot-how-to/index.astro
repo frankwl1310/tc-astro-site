@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_ORIGIN } from "../../lib/schema/site";
+
+const guides = await getCollection("hubspot-how-to");
+const sorted = guides.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const breadcrumbAndPage = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${SITE_ORIGIN}/hubspot-how-to/#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Startseite", item: `${SITE_ORIGIN}/` },
+        { "@type": "ListItem", position: 2, name: "HubSpot How-to", item: `${SITE_ORIGIN}/hubspot-how-to/` },
+      ],
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": `${SITE_ORIGIN}/hubspot-how-to/#webpage`,
+      name: "HubSpot How-to – Taipan Consulting",
+      description:
+        "Praktische Anleitungen und technische Artikel zu HubSpot — strukturiert für Lesbarkeit und Suchmaschinen.",
+      url: `${SITE_ORIGIN}/hubspot-how-to/`,
+      isPartOf: { "@type": "WebSite", name: "Taipan Consulting", url: `${SITE_ORIGIN}/` },
+      inLanguage: "de-DE",
+      about: { "@type": "Thing", name: "HubSpot" },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="HubSpot How-to – Taipan Consulting"
+  description="Praktische Anleitungen und technische Artikel zu HubSpot — von Taipan Consulting."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbAndPage)} />
+  </Fragment>
+
+  <section class="section-a section-padding pt-28 pb-20 md:pt-32 md:pb-24">
+    <div class="max-w-content mx-auto">
+      <h1 class="max-w-3xl mb-4">HubSpot How-to</h1>
+      <p class="text-body max-w-prose mb-12 text-taipan-gray-700">
+        Kurze, umsetzbare Artikel zu Setup, Datenmodell und Alltag mit HubSpot. Neue Beiträge erscheinen hier automatisch, sobald sie im Projekt als Markdown
+        hinzugefügt werden.
+      </p>
+
+      <ul class="space-y-8 list-none p-0 m-0">
+        {
+          sorted.map((g) => (
+            <li class="border-b border-taipan-gray-100 pb-8">
+              <a href={`/hubspot-how-to/${g.id}/`} class="group block">
+                <h2 class="!text-xl md:!text-2xl mb-2 group-hover:text-taipan-blue-600 transition-colors">{g.data.title}</h2>
+                <p class="text-body text-taipan-gray-700 max-w-prose mb-2">{g.data.description}</p>
+                <time class="text-sm text-taipan-gray-500" datetime={g.data.pubDate.toISOString()}>
+                  {g.data.pubDate.toLocaleDateString("de-DE", { year: "numeric", month: "long", day: "numeric" })}
+                </time>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

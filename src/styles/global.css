@@ -150,4 +150,51 @@
     line-height: 1.75;
     font-size: 18px;
   }
+
+  /* Markdown body (Content Collections) */
+  .hubspot-guide-body {
+    color: var(--color-taipan-anthrazit);
+    line-height: 1.75;
+    font-size: 18px;
+  }
+
+  .hubspot-guide-body > * + * {
+    margin-top: 1.25rem;
+  }
+
+  .hubspot-guide-body h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  .hubspot-guide-body h2:first-child {
+    margin-top: 0;
+  }
+
+  .hubspot-guide-body a {
+    color: var(--color-taipan-blue-600);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .hubspot-guide-body a:hover {
+    color: var(--color-taipan-blue-800);
+  }
+
+  .hubspot-guide-body code {
+    font-size: 0.9em;
+    background: var(--color-taipan-blue-50);
+    padding: 0.15em 0.4em;
+    border-radius: 0.25rem;
+  }
+
+  .hubspot-guide-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+
+  .hubspot-guide-body li {
+    margin-top: 0.35rem;
+  }
 }

@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from "astro:content";
+import HubSpotGuideLayout from "../../layouts/HubSpotGuideLayout.astro";
+import { buildGuideArticleSchema, resolveAbsoluteImageUrl } from "../../lib/schema/hubspotGuideArticle";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("hubspot-how-to");
+  return entries.map((entry) => ({
+    /* glob loader: URL segment(s) come from entry id (frontmatter `slug` overrides id when set) */
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const { Content } = await render(entry);
+
+const slugPath = `/hubspot-how-to/${entry.id}`;
+const canonicalPath = slugPath;
+
+const ogImage = resolveAbsoluteImageUrl(Astro.site, data.heroImage) ?? undefined;
+
+const articleSchema = buildGuideArticleSchema({
+  pathname: canonicalPath,
+  title: data.title,
+  description: data.description,
+  datePublished: data.pubDate,
+  dateModified: data.updatedDate,
+  imageUrl: ogImage,
+  author: data.author,
+});
+
+const formattedPub = data.pubDate.toLocaleDateString("de-DE", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<HubSpotGuideLayout title={`${data.title} – Taipan Consulting`} description={data.description} ogImage={ogImage}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+
+  <header class="max-w-prose mb-10">
+    <p class="text-sm font-medium text-taipan-blue-600 mb-3">
+      <a href="/hubspot-how-to/" class="hover:underline">HubSpot How-to</a>
+    </p>
+    <h1 class="!text-[2.25rem] md:!text-[2.75rem] mb-4">{data.title}</h1>
+    <p class="text-body text-taipan-gray-700 mb-2">{data.description}</p>
+    <p class="text-sm text-taipan-gray-500">
+      Veröffentlicht am {formattedPub}
+      {
+        data.author && (
+          <>
+            {" "}
+            · {data.author.url ? <a href={data.author.url} class="text-taipan-blue-600 hover:underline">{data.author.name}</a> : data.author.name}
+          </>
+        )
+      }
+    </p>
+  </header>
+
+  <div class="hubspot-guide-body max-w-prose">
+    <Content />
+  </div>
+</HubSpotGuideLayout>
