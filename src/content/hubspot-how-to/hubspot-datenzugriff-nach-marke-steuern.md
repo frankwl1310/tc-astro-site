@@ -7,7 +7,7 @@ author:
   url: "https://www.linkedin.com/in/frankwelschlehmann/"
 ---
 
-In Multi-Brand-Umgebungen ist Datentrennung kein Nice-to-have — sie ist Pflicht. Wenn selbstständige Berater (etwa HGBler) rechtlich nur ihre eigenen Datensätze einsehen dürfen, reicht eine lose Teamstruktur in HubSpot nicht aus. Ihr braucht ein sauberes Berechtigungskonzept, das auf einer zentralen Property aufbaut.
+In Multi-Brand-Umgebungen ist Datentrennung kein Nice-to-have — sie ist Pflicht. Wenn selbstständige Berater (etwa HGB-§84-Handelsvertreter) je nach Vertragsgestaltung auf ihre eigenen Datensätze beschränkt sind, reicht eine lose Teamstruktur in HubSpot nicht aus. Ihr braucht ein sauberes Berechtigungskonzept, das auf einer zentralen Property aufbaut.
 
 ## Das Grundproblem: HubSpot teilt standardmäßig alles
 

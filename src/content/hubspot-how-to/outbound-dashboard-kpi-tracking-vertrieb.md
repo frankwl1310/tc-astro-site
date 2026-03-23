@@ -23,7 +23,7 @@ Legt in den Einstellungen unter Aktivitäten → Meeting-Typen eine verbindliche
 
 **Anzahl gesetzter Termine:** Nur Termine mit Meeting-Typ `Connect & Qualify` zählen als "gesetzte Termine" — nicht alle Kalendereinträge. Diese Einschränkung ist entscheidend für die Genauigkeit.
 
-**Conversion-Rate:** Verhältnis von Anwahl zu gesetztem Termin. HubSpot unterstützt Formelfelder (aktuell noch in Beta) für berechnete Properties — alternativ lässt sich die Quote manuell im Report-Builder berechnen.
+**Conversion-Rate:** Verhältnis von Anwahl zu gesetztem Termin. HubSpot unterstützt Formelfelder für berechnete Properties — alternativ lässt sich die Quote direkt im Report-Builder berechnen.
 
 ## Dashboard-Aufbau: eine Oberfläche, mehrere Perspektiven
 
@@ -39,4 +39,4 @@ Diesen Report nutzt ihr in eurem wöchentlichen Team-Meeting als Kurzcheck: Wer 
 
 ## Was ihr damit erreicht
 
-Ein gut konfiguriertes Outbound-Dashboard spart eurem Team 1–2 Stunden pro Woche, die bisher für manuelle Excel-Pflege draufgingen. Wichtiger noch: Die Zahlen sind in Echtzeit verfügbar und nicht mehr von manuellen Eingaben abhängig. Führungskräfte sehen sofort, wo das Team steht — und können eingreifen, bevor ein schwaches Quartal erst im Monatsabschluss sichtbar wird.
+Ein gut konfiguriertes Outbound-Dashboard eliminiert den manuellen Aufwand für Excel-Pflege und Zusammenführen verschiedener Tabellen — je nach bisherigem Reporting-Prozess kann das spürbar Zeit freisetzen. Wichtiger noch: Die Zahlen sind in Echtzeit verfügbar und nicht mehr von manuellen Eingaben abhängig. Führungskräfte sehen sofort, wo das Team steht — und können eingreifen, bevor ein schwaches Quartal erst im Monatsabschluss sichtbar wird.

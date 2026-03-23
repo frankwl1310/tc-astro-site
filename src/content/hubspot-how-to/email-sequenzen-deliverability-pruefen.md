@@ -31,7 +31,7 @@ Das ist der am häufigsten übersehene Punkt: In HubSpot können Contacts nur da
 
 Prüft in eurer Kontaktliste, welcher Anteil der Leads diese Subscription hat. In der Praxis fehlt sie bei vielen Kontakten, die per CSV-Import in HubSpot gekommen sind — weil beim Import die Subscription nicht mitgeführt wurde. Das Ergebnis: Die Sequence startet formal, aber ein Großteil der E-Mails wird nie verschickt.
 
-Um das zu beheben, könnt ihr per Workflow die `One-to-One`-Subscription für Kontakte setzen, bei denen ein berechtigtes Interesse besteht — zum Beispiel für alle Leads aus einer Vertriebsliste. Klärt das vorher mit eurer Datenschutzverantwortlichen.
+Um das zu beheben, könnt ihr per Workflow die `One-to-One`-Subscription für Kontakte setzen, bei denen ein berechtigtes Interesse besteht — zum Beispiel für alle Leads aus einer Vertriebsliste. Klärt das vorher mit eurem Datenschutzbeauftragten.
 
 ## Schritt 4: Kontaktdaten-Qualität vor dem Einschreiben prüfen
 

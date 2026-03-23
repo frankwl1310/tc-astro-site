@@ -31,7 +31,7 @@ Es gibt vier Szenarien, in denen Enterprise seine Mehrkosten rechtfertigt:
 
 **"Wir brauchen mehr Automatisierung":** Professional unterstützt bereits umfangreiche Workflow-Automatisierungen. Der Unterschied zu Enterprise liegt eher in der Anzahl der gleichzeitig aktiven Workflows und in einigen spezifischen Trigger-Optionen — nicht im grundsätzlichen Automatisierungs-Capability.
 
-**"Wir wollen alles nutzen können":** Enterprise-Features, die nicht genutzt werden, rechtfertigen keine Mehrkosten von oft 2.000–5.000 Euro pro Monat. Konfiguriert zuerst, was ihr habt — bevor ihr upgradet.
+**"Wir wollen alles nutzen können":** Enterprise-Features, die nicht genutzt werden, rechtfertigen keine Mehrkosten im typischerweise vierstelligen Euro-Bereich pro Monat (die genaue Differenz hängt von Teamgröße, gewählten Hubs und Vertragskonditionen ab — prüft das konkret mit eurem Account-Manager). Konfiguriert zuerst, was ihr habt — bevor ihr upgradet.
 
 **"Unser Wettbewerber hat Enterprise":** Das ist kein Entscheidungskriterium.
 

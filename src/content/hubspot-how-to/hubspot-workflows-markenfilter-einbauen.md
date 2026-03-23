@@ -33,7 +33,10 @@ Neben der Property-Prüfung solltet ihr auch den Trigger-Zeitpunkt überdenken:
 
 Folgt dieser Reihenfolge bei jedem größeren Daten-Import:
 
-Deaktiviert temporär alle Workflows, die durch "Kontakt wurde erstellt" getriggert werden — oder schaltet den Enrollment-Typ auf manuell. Importiert die Daten inklusive aller relevanten Properties (Marke, Segment, Owner). Prüft nach dem Import eine Stichprobe der neu angelegten Kontakte. Aktiviert die Workflows wieder oder führt einen manuellen Enrollment-Lauf für die importierten Kontakte durch.
+1. **Workflows temporär deaktivieren:** Schaltet alle Workflows, die durch „Kontakt wurde erstellt" getriggert werden, auf manuelles Enrollment — oder deaktiviert sie kurzzeitig.
+2. **Daten importieren:** Ladet die Kontakte inklusive aller relevanten Properties (Marke, Segment, Owner) in einem Durchgang hoch.
+3. **Stichprobe prüfen:** Kontrolliert nach dem Import eine repräsentative Auswahl neu angelegter Kontakte auf Vollständigkeit und korrekte Property-Belegung.
+4. **Workflows reaktivieren:** Aktiviert die Workflows wieder oder führt einen manuellen Enrollment-Lauf gezielt für die importierten Kontakte durch.
 
 ## Daten-Hygiene-Check für bestehende Workflows
 

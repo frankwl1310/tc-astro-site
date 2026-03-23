@@ -35,7 +35,7 @@ Der Middleware-Ansatz hat den Vorteil, dass ihr die Logik komplett selbst kontro
 
 ## Was bei Austritt passieren muss
 
-Die Offboarding-Seite ist mindestens genauso wichtig. Wenn ein Mitarbeiter Personio verlässt, sollte Personio einen weiteren Webhook feuern, der in HubSpot folgende Aktionen auslöst: HubSpot-Nutzer deaktivieren, alle Kontakte und Deals des ausscheidenden Mitarbeiters einem definierten Nachfolger zuweisen, eine interne Aufgabe für den Teamleiter erstellen.
+Die Offboarding-Seite ist mindestens genauso wichtig. Wenn ein Mitarbeiter Personio verlässt, sollte Personio — sofern Webhooks für den Austritts-Event entsprechend konfiguriert sind — einen weiteren Webhook feuern, der in HubSpot folgende Aktionen auslöst: HubSpot-Nutzer deaktivieren, alle Kontakte und Deals des ausscheidenden Mitarbeiters einem definierten Nachfolger zuweisen, eine interne Aufgabe für den Teamleiter erstellen.
 
 Ohne diesen Offboarding-Schritt akkumulieren sich über Monate verwaiste Datensätze mit einem inaktiven Owner — und niemand bearbeitet diese Leads mehr.
 

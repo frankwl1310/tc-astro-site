@@ -31,7 +31,7 @@ Wichtig: Lasst eure Kollegen kurze Gesprächsnotizen hinterlassen — direkt im 
 
 ## Häufige Fehler
 
-**Zu viele Leads gleichzeitig in Sequences:** Wenn ihr 200 Leads auf einmal in eine Sequence packt, riskiert ihr Deliverability-Probleme. Staffelt den Versand — maximal 50 Starts pro Tag ist ein guter Richtwert.
+**Zu viele Leads gleichzeitig in Sequences:** Wenn ihr 200 Leads auf einmal in eine Sequence packt, riskiert ihr Deliverability-Probleme. Staffelt den Versand — 30 bis 50 Starts pro Tag ist ein gebräuchlicher Richtwert, der tatsächliche Grenzwert hängt jedoch von eurem Sender-Score und der Konfiguration eurer Sending-Domain ab.
 
 **Keine Qualifizierungsphase vor dem Deal:** Der häufigste Fehler ist, Messe-Leads direkt als Deals anzulegen. Das verstopft die Pipeline mit unqualifizierten Kontakten. Nutzt stattdessen die Lead-Pipeline für die Qualifizierungsphase und überführt nur echte Interessenten in den Deal.
 

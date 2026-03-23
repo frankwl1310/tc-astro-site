@@ -27,9 +27,9 @@ Diese Trennung macht das System zuverlässiger: Statt eine komplexe Einstufungsa
 
 ## Credit-Budget planen
 
-Bevor ihr die Klassifizierung für euren gesamten Kontaktbestand startet, kalkuliert euren Credit-Bedarf. Als grober Richtwert gilt: eine Klassifizierung kostet zwischen 1 und 3 Credits, je nach Datenlage und Prompt-Komplexität.
+Bevor ihr die Klassifizierung für euren gesamten Kontaktbestand startet, kalkuliert euren Credit-Bedarf. Als grober Richtwert gilt: eine Klassifizierung kostet zwischen 1 und 3 Credits, je nach Datenlage und Prompt-Komplexität — der genaue Verbrauch variiert je nach HubSpot-Paket und Konfiguration.
 
-HubSpot gibt euch in den Einstellungen unter KI-Features → Credits die aktuelle Monatszuteilung und den Verbrauch an. Setzt euer monatliches Limit bewusst — HubSpot kann bei Überschreitung automatisch auf ein höheres Paket upgraden, was unerwartet Kosten verursacht.
+HubSpot gibt euch in den Einstellungen unter KI-Features → Credits die aktuelle Monatszuteilung und den Verbrauch an. Setzt euer monatliches Limit bewusst — wenn das Credit-Budget erschöpft ist, pausiert HubSpot die KI-Features bis zur nächsten Abrechnungsperiode. Klärt vorab mit eurem HubSpot-Account-Manager, wie das Verhalten bei eurem spezifischen Vertrag geregelt ist.
 
 Empfehlung: Testet zuerst mit 100 Kontakten. Prüft die Ergebnisqualität, bevor ihr den kompletten Bestand verarbeitet. Das spart Credits bei schlechten Prompts und gibt euch die Möglichkeit, die Aufgabenstellung zu verfeinern.
 
