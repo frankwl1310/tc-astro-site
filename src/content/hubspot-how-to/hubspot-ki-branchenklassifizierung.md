@@ -1,3 +1,12 @@
+---
+title: "KI-gestützte Branchenklassifizierung in HubSpot einrichten"
+description: "Wie ihr in HubSpot eine KI-Eigenschaft für eure interne Branchenklassifikation konfiguriert, sauber promptet und für bessere Segmentierung nutzt."
+pubDate: 2026-03-23
+author:
+  name: "Frank Welsch-Lehmann"
+  url: "https://www.linkedin.com/in/frankwelschlehmann/"
+---
+
 # KI-gestützte Branchenklassifizierung in HubSpot einrichten
 
 **Kategorie:** HubSpot CRM · Datenanreicherung · KI-Eigenschaften

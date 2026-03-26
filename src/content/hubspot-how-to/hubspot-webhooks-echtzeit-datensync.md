@@ -1,3 +1,12 @@
+---
+title: "HubSpot Webhooks: Echtzeit-Datensync mit externen Systemen"
+description: "Wie ihr mit HubSpot Webhooks Datenänderungen in Echtzeit an externe Systeme übergebt und einen robusten Datensync ohne CSV-Exporte aufsetzt."
+pubDate: 2026-03-23
+author:
+  name: "Frank Welsch-Lehmann"
+  url: "https://www.linkedin.com/in/frankwelschlehmann/"
+---
+
 # HubSpot Webhooks: Echtzeit-Datensync mit externen Systemen
 
 **Kategorie:** HubSpot Operations · Integrationen · Webhooks

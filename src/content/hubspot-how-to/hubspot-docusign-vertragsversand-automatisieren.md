@@ -1,3 +1,12 @@
+---
+title: "HubSpot + DocuSign: Vertragsversand automatisieren"
+description: "Wie ihr den Vertragsversand mit der HubSpot-DocuSign-Integration automatisiert, Feldzuordnung sauber einrichtet und den Workflow sicher testet, bevor ihr live geht."
+pubDate: 2026-03-23
+author:
+  name: "Frank Welsch-Lehmann"
+  url: "https://www.linkedin.com/in/frankwelschlehmann/"
+---
+
 # HubSpot + DocuSign: Vertragsversand automatisieren
 
 **Kategorie:** HubSpot CRM · Integrationen · Workflow-Automatisierung

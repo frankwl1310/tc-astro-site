@@ -1,3 +1,12 @@
+---
+title: "Zuordnungshistorie in HubSpot: Wann war ein Kontakt bei welchem Unternehmen?"
+description: "Wie ihr in HubSpot eine belastbare Zuordnungshistorie mit Custom Objects aufbaut, inklusive Start- und Enddatum für saubere historische Auswertungen."
+pubDate: 2026-03-23
+author:
+  name: "Frank Welsch-Lehmann"
+  url: "https://www.linkedin.com/in/frankwelschlehmann/"
+---
+
 # Zuordnungshistorie in HubSpot: Wann war ein Kontakt bei welchem Unternehmen?
 
 **Kategorie:** HubSpot CRM · Datenarchitektur · Custom Objects
