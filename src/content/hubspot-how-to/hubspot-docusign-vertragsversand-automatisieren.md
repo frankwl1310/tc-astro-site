@@ -7,8 +7,6 @@ author:
   url: "https://www.linkedin.com/in/frankwelschlehmann/"
 ---
 
-# HubSpot + DocuSign: Vertragsversand automatisieren
-
 **Kategorie:** HubSpot CRM · Integrationen · Workflow-Automatisierung
 **Schwierigkeitsgrad:** Mittel bis Fortgeschritten
 **Zeitaufwand:** ca. 2–4 Stunden (je nach Komplexität der Vertragsvorlage)

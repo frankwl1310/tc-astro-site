@@ -7,8 +7,6 @@ author:
   url: "https://www.linkedin.com/in/frankwelschlehmann/"
 ---
 
-# KI-gestützte Branchenklassifizierung in HubSpot einrichten
-
 **Kategorie:** HubSpot CRM · Datenanreicherung · KI-Eigenschaften
 **Schwierigkeitsgrad:** Mittel
 **Zeitaufwand:** ca. 30–60 Minuten

@@ -7,8 +7,6 @@ author:
   url: "https://www.linkedin.com/in/frankwelschlehmann/"
 ---
 
-# HubSpot Webhooks: Echtzeit-Datensync mit externen Systemen
-
 **Kategorie:** HubSpot Operations · Integrationen · Webhooks
 **Schwierigkeitsgrad:** Mittel bis Fortgeschritten
 **Zeitaufwand:** ca. 1–2 Stunden
